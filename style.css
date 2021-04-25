@@ -1,3 +1,15 @@
+:root{
+    --blue: #7BA1A6;
+    --brown: #A6882D;
+    --yellow: #F2C744;
+    --golden: #D9B54A;
+}
+:focus{
+    outline: none;
+}
 body{
     margin: 0;
+}
+#tip_percent{
+    
 }

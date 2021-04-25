@@ -9,12 +9,19 @@
 </head>
 <body>
     <section id="tip">
-        <input type="text" id="bill" placeholder="£">
-        <div id="total_tip"></div>
-        <div id="total_bill"></div>
+        <input type="text" id="bill" placeholder="£" inputmode="numeric" onkeyup="billCost()">
+        <div id="total_tip">0</div>
+        <div id="total_bill">0</div>
     </section>
-    <section id="people"></section>
+    <section id="people">
+        <div id="percent_number">10</div>
+        <input type="range" id="tip_percent" min="0" max="100" value="10" onkeyup="tipPercent()">
+        <div id="split_number">1</div>
+        <input type="range" id="tip_split" min="1" max="10" value="1">
+        <hr>
+        <div id="total_split"></div>
+    </section>
     <section id="mood"></section>
-<script src="functions.js"></script>
+    <script src="functions.js"></script>
 </body>
 </html>
