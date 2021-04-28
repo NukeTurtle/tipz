@@ -1,15 +1,68 @@
 :root{
-    --blue: #7BA1A6;
-    --brown: #A6882D;
-    --yellow: #F2C744;
-    --golden: #D9B54A;
+    --background: #a5aab4;
+    --frontbackground: #d5d5d5;
+    --white: #f5f5f5;
+    --text: #e8e8e8;
+    --blue: #4b5667;
 }
 :focus{
     outline: none;
 }
 body{
     margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    background: var(--background);
+    color: #4b5667;
+    font-family: 'Open Sans';
 }
-#tip_percent{
-    
+section{
+    padding: 15px;
+    margin: 15px auto;
+    width: 400px;
+    background: var(--frontbackground);
+    box-shadow: 5px 5px 5px var(--black);
+    border-radius: 10px;
+}
+section:nth-child(3){
+    background-color: var(--blue);
+    color: var(--white);
+}
+h2, h3{
+    text-align: center;
+    contain: content;
+}
+h3{
+    color: var(--text)
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+input{
+    background-color: var(--white);
+    border:hidden;
+    border-radius: 10px;
+    width: 7em;
+    padding: 0 10px;
+    text-align: right;
+}
+hr{
+border: 1px dashed;
+}
+[type=range]{
+    width: 100%;
+    padding: 0;
+}
+#total_bill, #total_split{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+#total_tip::before, #total_bill::before, #total_split::before{
+    content: "£";
+}
+#percent_number::after{
+    content: "%";
 }
