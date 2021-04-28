@@ -10,41 +10,43 @@
     <title>Tip Calculator</title>
 </head>
 <body>
-    <section id="tip">
-        <h2>TIP CALCULATOR</h2>
-        <div class="row">
-            <span>Bill</span>
-            <input type="text" id="bill" placeholder="£" inputmode="numeric">
-        </div>
-        <div class="row">
-            <span>Tip</span>
-            <div id="total_tip">0</div>
-        </div>
-        <hr>
-        <div class="row">
-            <span>Total</span>
-            <div id="total_bill">0</div>
-        </div>
-    </section>
-    <section id="people">
-        <div class="row">
-            <span>Split</span>
-            <div id="split_number">1</div>
-        </div>
-        <input type="range" id="tip_split" min="1" max="12" value="1">
-        <div class="row">
-            <span>Tip</span>
-            <div id="percent_number">0</div>
-        </div>
-        <input type="range" id="tip_percent" min="0" max="100" value="0">
-        <div class="row">
-            <span>Splits</span>
-            <div id="total_split">0</div>
-        </div>
-    </section>
-    <section id="mood">
-        <h3 id="mood_text">my mood</h3>
-    </section>
+    <div id="container">
+        <section id="tip">
+            <h2>TIP CALCULATOR</h2>
+            <div class="row">
+                <span>Bill</span>
+                <input type="text" id="bill" placeholder="£" inputmode="numeric">
+            </div>
+            <div class="row">
+                <span>Tip</span>
+                <div id="total_tip">0</div>
+            </div>
+            <hr>
+            <div class="row">
+                <span>Total</span>
+                <div id="total_bill">0</div>
+            </div>
+        </section>
+        <section id="people">
+            <div class="row">
+                <span>Split</span>
+                <div id="split_number">1</div>
+            </div>
+            <input type="range" id="tip_split" min="1" max="12" value="1">
+            <div class="row">
+                <span>Tip</span>
+                <div id="percent_number">0</div>
+            </div>
+            <input type="range" id="tip_percent" min="0" max="100" value="0">
+            <div class="row">
+                <span>Splits</span>
+                <div id="total_split">0</div>
+            </div>
+        </section>
+        <section id="mood">
+            <h3 id="mood_text">my mood</h3>
+        </section>
+    </div>
     <script src="functions.js"></script>
 </body>
 </html>
