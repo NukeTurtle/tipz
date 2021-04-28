@@ -10,8 +10,7 @@
 }
 body{
     margin: 0;
-    height: 100vh;
-    overflow: hidden;
+    height: 100%;
     background: var(--background);
     color: #4b5667;
     font-family: 'Open Sans';
@@ -19,7 +18,7 @@ body{
 section{
     padding: 15px;
     margin: 15px auto;
-    width: 95vw;
+    width: 80vw;
     max-width: 400px;
     background: var(--frontbackground);
     box-shadow: 5px 5px 5px var(--black);
